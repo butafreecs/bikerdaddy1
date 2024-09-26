@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Policies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .nav-justified {
+            justify-content: center; /* Centers the nav tabs */
+        }
+        .nav-tabs .nav-link {
+            color: #000; /* Makes all tab texts black */
+            background-color: transparent; /* Transparent background for tabs */
+            border: none; /* No borders for a cleaner look */
+            padding: 10px 15px;
+        }
+        .nav-tabs .nav-link.active {
+            color: #dc3545; /* Keeps active tab text in 'danger' color */
+            border-bottom: 3px solid #dc3545; /* Danger color under the active tab */
+        }
+        .tab-content > .tab-pane {
+            border-top: 3px solid #4a4344; /* Adds a red top border to the content */
+            padding: 20px;
+            border-left: 1px solid #ddd; /* Adds a subtle border to the left of the content */
+            border-right: 1px solid #ddd; /* Adds a subtle border to the right of the content */
+            border-bottom: 1px solid #ddd; /* Adds a subtle border to the bottom of the content */
+        }
+        .tab-content {
+            font-family: Arial, sans-serif; /* Use your preferred font */
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333; /* Dark grey text for better readability */
+        }
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            .tab-content {
+                font-size: 12px;
+            }
+        }
+    </style>
+    
+    
+</head>
+<body>
+<div class="container-fluid my-5">
+    <h1 class="text-center">Company Policies</h1>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs nav-justified" id="policyTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pricing-policy-tab" data-bs-toggle="tab" data-bs-target="#pricing-policy" type="button" role="tab" aria-controls="pricing-policy" aria-selected="true">Pricing Policy</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="terms-tab" data-bs-toggle="tab" data-bs-target="#terms" type="button" role="tab" aria-controls="terms" aria-selected="false">Terms of Use</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="privacy-tab" data-bs-toggle="tab" data-bs-target="#privacy" type="button" role="tab" aria-controls="privacy" aria-selected="false">Privacy Policy</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="insurance-tab" data-bs-toggle="tab" data-bs-target="#insurance" type="button" role="tab" aria-controls="insurance" aria-selected="false">Insurance Policy</button>
+        </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="pricing-policy" role="tabpanel" aria-labelledby="pricing-policy-tab">
+            <pre>Biker daddy Bikes takes onus for being absolutely transparent with our riders. Mentioned below is a comprehensive list of pricing for certain scenarios after you have created your reservation.
+                Cancellation	Cancellation made more than 6hrs before booking start: ₹100
+                Cancellation made within 6hrs of booking start: 50 % of Booking Fee
+                Cancellation made within 2hrs of booking time: 75% of the Booking Fee
+                Cancellation made after booking start: No Refund
+                
+                Note: (Cancellation refund will be done through the original payment method within 7- 10 working days)
+                Reschedule before start	Modifications made more than 6hrs before booking start: ₹50
+                Modifications made within 6-2 hrs of booking start: ₹50 or 10% of the booking (which so ever is greater)
+                Modification made within 2-1 hrs of booking start: ₹100 or 20% of the booking (which so ever is greater)
+                Extension Charges	Extension before start time: ₹50 extra plus the normal charges for the period extended
+                Extension post start time: ₹250 extra plus the normal charges for the period extended
+                Please note that extension is subject to vehicle availability
+                Extension charges should be paid fully in either cash or through online payment methods in order to extend the booking successfully.
+                Shortening post start	No refunds would be provided in this case
+                Late Return	Non Geared Scooters: First 2 hours of delay would be charged at ₹500 + hourly rates
+                KTM and Dominar: First 2 hours of delay would be charged at ₹500 + hourly rates
+                Royal Enfield: First 2 hours of delay would be charged at ₹500 + hourly rates
+                All Other Bikes: First 2 hours of delay would be charged at ₹500 + hourly rates
+                Post 2 Hours, subsequent hourly charges will be applicable on weekdays (Mon–Fri)
+                On weekends(Sat-Sun) - next 24 hour rental will be charged post 2 hours of late return.
+                Extra km charges	After the exhaustion of free kms, the following charges will be applicable:
+                For KTM and Dominar: ₹5/km
+                For Royal Enfield and Honda CBR: ₹4.5/km
+                For Geared vehicle (150cc to 250cc): ₹3.5/km
+                For Activa 6G: ₹ 4/km
+                For Infinity E.1 Electric: ₹5/Km
+                For all other vehicles: ₹2.5/km
+                Note :
+                •	All refunds shall be made through the original payment mode within 7-10 working days
+                •	Biker daddy Bikes reserves the right to charge a violation penalty on the rider
+                •	Weekend (Sat-Sun) rates may vary based on availability
+                •	Interstate travel is not allowed
+                •	The refunds for the repairs & maintenance done by customers on the vehicles shall be processed within 7-10 working days. The customer is required to share the bills with the Biker daddy bikes team.
+                List of penalties that can be applicable if rider violate terms mentioned
+                Traffic and Parking violations	Full payment of fines + ₹500 per 30 days late in payment
+                No Show	Bookings would stand cancelled if after 4 hours of booking start time the customer still doesn’t show up.
+                No refunds would be applicable
+                Overspeeding >= permissible limit for that segment	Initially two warnings, then charged at ₹ 200 for overspeeding 3rd time. Beyond 3rd warning a Penalty of ₹500 is charged (over and above any government fines that may have been levied)
+                
+                OVERSPEEDING LIMITS
+                Non Geared Scooters: 75km/hour
+                RE, CBR and Avenger: 100km/hour
+                KTM and Dominar: 110km/hour
+                All Other vehicles: 90km/hour
+                Key/Helmet not returned at end of reservation	₹800 for each
+                ₹500 for key
+                Vehicle Damage	Insurance claim will only be taken in case the estimate is above INR 10,000/-
+                In case of the repair estimate is more than INR 10,000 - the customer has to bear
+                
+                1.	The amount which is not covered under insurance claim
+                2.	Rental amount for the number of days taken for repair
+                Entire claim amount has to be paid by the customer upfront. Biker daddy Bikes will refund the amount claimed under insurance to the customer, as when the claim process is completed.
+                Towing and Impounding	No cost will be charged to customer if caused by vehicle failure & full cost to be charged to customer if caused by user negligence.
+                Helmet	One complimentary helmet is provided at no additional cost.
+                An additional helmet (Extra) can be rented from the station for Rs. 50.
+                Customers can only rent 2 helmets per booking.
+                A fee of Rs. 800 will be imposed if the helmet is damaged or lost.
+                GPS Holder	In case the GPS holder is missing or broken/damaged, a penalty of INR 500 will be levied on the rider.
+                Petrol	Biker daddy Bikes does not provide fuel. The tariff mentioned is exclusive of fuel. Biker daddy Bikes provides one litre fuel while delivery of vehicle and expects the rider to return the same amount of fuel while returning the vehicle. In case there is excess fuel in the vehicle at the time of return, Biker daddy Bikes is not liable for any refunds for the same.
+                In case there is shortage of fuel in the vehicle, the fuel charges as applicable have to be borne by the rider.
+                Operating Hours	All our hub stations are operational from 9 AM to 7 PM only, except Bangalore locations which are operated from 7 AM to 9 PM across Bangalore apart from the Koramangala location which is scheduled to operate from 9 AM to 9 PM. In case the rider fails to pickup/return the vehicle by station timings, the pickup/return will take place on the next day and the applicable charges will be levied on the rider. No pickup/return request will be entertained post station's operating hours.
+                Misconduct	Any misconduct with the station executive by the rider under the influence of alcohol or otherwise will result in cancellation of booking. The rider will not be liable to any refunds in such case.
+                Customer Care timings	07:00 AM to 10:00 PM
+                
+                
+                Exceptions
+                •	In the event the rider is found to be under the influence of alcohol during a booking, the rider will be held liable for 100% of the vehicle damage bill as per the invoice received from the vehicle workshop
+                •	The rider will be liable for 100% of the entire vehicle damage bill in the event that the vehicle workshop and/or insurance company deem the damage to be consequential in nature (this will be clearly stated in the accident report). Consequential damage occurs when the rider continues driving even after an external vehicle impact, thereby severely undermining the condition of the vehicle.
+                •	In the event of a puncture to the Vehicle’s tyres during such time the Vehicle is in the customer’s possession (including change of tyre tube and similar), the customer shall be liable to repair the same, or pay the cost of repair to Biker daddy Bikes.
+                Responsibility for Payment:
+                1.	Payments by riders shall be made with his/her credit card, debit card, E-wallets or cash. The rider is under obligation to ensure that the account from which the amounts are to be collected have sufficient funds or credit available to cover any charges. Rider is solely responsible for any associated bank or credit card charges or fees. Rider may be charged a processing fee for a declined credit or debit card payment.
+                2.	In the event the rider defaults on any payments, Biker daddy Bikes is entitled to charge reminder fees and default interest in accordance with the provisions of the law. In addition, Biker daddy Bikes may utilize third parties to collect amounts owed to Biker daddy Bikes by a rider.
+                3.	With all fees mentioned above, Biker daddy Bikes reserves the right to prohibit a rider from making a subsequent reservation until all outstanding fees in the rider's account have been paid in full. In the event a fee is incurred, riders will receive an invoice from Biker daddy Bikes that will have detailed payment instructions.
+                Collision or other incident:
+                1.	Rider will be responsible for all towing and impounding charges associated with a collision.
+                2.	Rider will be responsible for all towing and impounding charges caused by rider failure.
+                3.	Biker daddy Bikes will be responsible for all towing and impounding charges caused by vehicle failure.
+                4.	Rider will be responsible for all towing and impounding charges caused by rider failure.
+                5.	Rider will be responsible for all applicable damages and costs, including those in excess of the applicable Damage Fee, arising from the rider's failure to comply with the terms of the Agreement and/or a violation of the law.
+                6.	Riders are responsible for paying all tolls at the time they are due.
+                
+                </pre>
+        </div>
+        <div class="tab-pane fade" id="terms" role="tabpanel" aria-labelledby="terms-tab">
+            <pre>Bikerdaddy Bike Rental Terms and Conditions
+
+                1. General Agreement
+                By renting a bike from Bikerdaddy, you (the “Renter”) agree to comply with all the terms and conditions outlined below. Bikerdaddy reserves the right to change these terms and conditions at any time.
+                
+                2. Rental Period
+                
+                    •	The rental period begins at the time of pick-up and ends when the bike is returned to Bikerdaddy’s designated location.
+                    •	Late returns will incur additional charges.
+                
+                3. Rental Fees and Payment
+                
+                    •	All rental fees must be paid upfront.
+                    •	The Renter agrees to pay any additional charges (including but not limited to late fees, damages, or fines).
+                    •	A valid ID and security deposit are required for renting a bike. The deposit will be refunded upon safe return of the bike in good condition.
+                
+                4. Use of the Bike
+                
+                    •	The Renter agrees to use the bike in a safe and responsible manner.
+                    •	The bike must only be used for personal transportation purposes and not for racing, stunts, or other reckless activities.
+                    •	The Renter is responsible for following all traffic laws and wearing proper safety gear, including a helmet.
+                    •	Bikerdaddy reserves the right to cancel the rental agreement if the bike is used improperly.
+                
+                5. Bike Condition and Maintenance
+                
+                    •	The bike is provided in good working condition, and it is the Renter’s responsibility to inspect it before use.
+                    •	The Renter agrees to return the bike in the same condition it was received, barring normal wear and tear.
+                    •	Any damages, theft, or loss during the rental period will be the Renter’s responsibility and may result in additional charges.
+                
+                6. Liability and Insurance
+                
+                    •	Bikerdaddy is not responsible for any injuries, accidents, or damages sustained by the Renter or others during the rental period.
+                    •	The Renter assumes full liability for any and all damages or legal claims arising from the use of the bike.
+                    •	It is the Renter’s responsibility to ensure they have adequate insurance coverage for personal liability, injury, or theft.
+                
+                7. Theft or Loss
+                
+                    •	In the event of theft or loss of the bike, the Renter is responsible for reporting it to both the police and Bikerdaddy immediately.
+                    •	The Renter is financially liable for the full replacement cost of the bike in case of theft or irreparable damage.
+                
+                8. Cancellations and Refunds
+                
+                    •	Cancellations made 24 hours prior to the rental period will receive a full refund.
+                    •	No refunds will be issued for cancellations made within 24 hours of the rental period or for early returns.
+                
+                9. Termination of Agreement
+                
+                    •	Bikerdaddy reserves the right to terminate the rental agreement at any time if the Renter breaches any of the terms and conditions, engages in unsafe behavior, or misuses the bike.
+                
+                10. Jurisdiction
+                
+                    •	Any disputes arising from this rental agreement shall be governed by and construed in accordance with the laws of [Your Location].
+                
+                11. Contact Information
+                
+                    •	For any questions, concerns, or disputes, contact us at:
+                    •	Email: [your email]
+                    •	Phone: [your phone number]
+                
+                Acknowledgment
+                By signing below, the Renter acknowledges that they have read and understood the terms and conditions and agree to abide by them.
+                
+                Renter’s Name: ____________________
+                
+                Renter’s Signature: ____________________
+                
+                Date: ____________________
+                
+                This draft is a general template and should be reviewed by a legal professional to ensure compliance with local laws and regulations.
+                
+
+            </pre>
+        </div>
+        <div class="tab-pane fade" id="privacy" role="tabpanel" aria-labelledby="privacy-tab">
+            <pre>This privacy policy (“Privacy Policy”) is subject to the terms of use of the website [www.Bikerdaddy.com] (“Website”) and mobile application (“Application”), and comes into effect from the date and time a user (“user”) registers with Biker daddy Bikes, and accepts the Terms of Use laid out therein. By using the Website/Application, or its Services, the user consents to collection, storage, and use of the personal information you provide (including any changes thereto as provided by the user) for any of the services that Biker daddy Bikes offers.
+                Our Privacy Policy sets out how Biker daddy Bikes (“Biker daddy Bikes/We/Our”) collects, use, share and protect information provided in cBiker daddyection with Biker daddy Bikes services (collectively, the “Service(s)”), and your choices about the collection and use of your information.
+                1.	COLLECTION OF PERSONAL INFORMATION
+                In the course of providing the Services to you, Biker daddy Bikes collects the following information:
+                •	Personal information such as your username, password, e-mail address, phone number and address when you register for a Biker daddy Bikes account (“user information”).
+                •	We may automatically collect some information about your hardware devices when you access Biker daddy Bikes. For example, when you utilize our applications, we may collect your internet protocol (“IP”) address and the type of mobile device you use and your geographic location. We also may collect information about your activity on Biker daddy Bikes, such as information about your account usage, as well as information about how you interact with the Website/Application. We may combine this automatically-gathered information with other information, including personal information we have collected about you.
+                •	Communications between you and Biker daddy Bikes.
+                2.	STORAGE OF INFORMATION AND CONTENT
+                •	We have implemented procedures to help protect the information that you provide to us. However, no method of transmitting or storing electronic data is ever completely secure, and we cannot guarantee that such information will never be accessed, used, or released in a manner that is inconsistent with this policy. We expressly disclaim any representation or warranty, whether express or implied, with respect to ensuring, guaranteeing, or otherwise offering any definitive promise of security in cBiker daddyection with your Information. THE USER IS RESPONSIBLE FOR MAINTAINING THE SECRECY OF YOUR ACCOUNT INFORMATION AT ALL TIMES.
+                •	The user is solely responsible for maintaining confidentiality of the user’s password and user identification. The user shall be solely responsible for all activities and transmission performed by the user through his user identification. Biker daddy Bikes assumes no responsibility or liability for their improper use of information relating to such usage of credit cards and/or debit cards by the user, whether online or off-line.
+                3.	USE OF YOUR CONTENT
+                •	In order to provide a personalised browsing experience, Biker daddy Bikes may collect information from the user, and the user agrees that Biker daddy Bikes may use such information to improve its marketing and promotional efforts, to analyse usage, improve the content of Biker daddy Bikes, product offerings, and to customise Biker daddy Bikes’ content, layout, and services, in order to improve Biker daddy Bikes and better tailor it to meet the needs of the user.
+                •	To extend this personalized experience, Biker daddy Bikes may track the IP address of a user’s device and save certain user data on the user’s device in the form of cookies. Biker daddy Bikes uses this data to deliver web pages to the user upon request, to customize the site to the interests of the user, to measure traffic within the Website/Application, and let advertisers know the geographic locations of the users. Such portion of the user data provided by a user to Biker daddy Bikes that may be personal or sensitive in nature, will not be provided to third parties without previous consent of the user concerned. user data of a general nature may however be revealed to external parties.
+                •	We use or may use the data collected through cookies, log file, device identifiers, location data and clear gifs information to: (a) remember information so that you will not have to re-enter it during your visit or the next time you visit the site; (b) provide custom, personalized content and information, including advertising; (c) provide and monitor the effectiveness of our Services; (d) monitor aggregate metrics such as total number of visitors, traffic, usage, and demographic patterns on our website and our Services; (e) diagnose or fix technology problems; and (f) otherwise to plan for and enhance our service.
+                •	We use third-party analytics tools to help us measure traffic and usage trends for the Services. These tools collect information sent by your device or our Services, including the web pages you visit, add-ons, and other information that assists us in improving the Services. We collect and use this analytics information with analytics information from other users so that it cannot reasonably be used to identify any particular individual user.
+                •	When you interact with our customer service representatives, we may also collect personal information, monitor and record phone calls, emails, or other communications between you, Biker daddy Bikes, and our customer service representatives or other employees or representatives.
+                •	In order to facilitate communications between you, your friends, and other Biker daddy Bikes users.
+                4.	SHARING YOUR CONTENT
+                •	We may share user information and your information (including but not limited to, information from cookies, log files, device identifiers, location data, and usage data) with businesses that are legally part of the same group of companies that Biker daddy Bikes is part of, or that become part of that group (“Affiliates”). Affiliates may use this information to help provide, understand, and improve the Service (including by providing analytics) and Affiliates’ own services (including by providing you with better and more relevant experiences).
+                •	We also may share your information as well as information from tools like cookies, log files, and device identifiers and location data, with third-party organizations that help us provide the Services to you. Our service providers will be given access to your information as is reasonably necessary to provide the Services under reasonable confidentiality terms.
+                •	We may remove parts of data that can identify you and share anonymized data with other parties. We may also combine your information with other information in a way that it is no longer associated with you and share that aggregated information.
+                •	Biker daddy Bikes may share sensitive personal information of a user with any third party without obtaining the prior consent of the user in the following limited circumstances:
+                •	When it is requested or required by law or by any court or governmental agency or authority to disclose, for the purpose of verification of identity, or for the prevention, detection, investigation including cyber incidents, or for prosecution and punishment of offences. These disclosures are made in good faith and belief that such disclosure is reasonably necessary for enforcing the Terms of Service, this Privacy Policy, or for complying with the applicable laws and regulations.
+                •	Biker daddy Bikes proposes to share such information within its group companies and officers and employees of such group companies for the purpose of processing personal information on its behalf. Biker daddy Bikes also ensures that the recipients of such information agree to process such information based on our instructions and in compliance with this Privacy Policy and any other appropriate confidentiality and security measures.
+                •	Where it is deemed necessary, in good faith so as to protect the property of Biker daddy Bikes, its employees, vendors, contractors and sub-contractors.
+                •	With its employees, vendors, contractors, sub-contractors and other parties in order to provide the services to the user.
+                •	Biker daddy Bikes proposes to share such information within its group companies and officers and employees of such group companies for the purpose of processing personal information on its behalf. Biker daddy Bikes also ensures that the recipients of such information agree to process such information based on our instructions and in compliance with this Privacy Policy and any other appropriate confidentiality and security measures.
+                •	In the event of a sale of all or part of the business of Biker daddy Bikes, or a sale or transfer of assets, or merger or business transfer, or in the event of bankruptcy, Wolf Labs may share your personally identifying information to one or more third parties as part of such transaction.
+                5.	In compliance with Information Technology Act, 2000 and rules made there under, the name and contact details of the Grievance Officer are provided below:
+                +91 6002690112
+                6.	Biker daddy Bikes may change or amend this Privacy Policy from time to time to incorporate necessary future changes. Biker daddy Bikes use of user Information shall be in adherence with consistent with the provisions of the relevant privacy policy under which the information was collected, regardless of new or conflicting provisions in an updated Privacy Policy.
+                 </pre>
+        </div>
+        <div class="tab-pane fade" id="insurance" role="tabpanel" aria-labelledby="insurance-tab">
+            <pre>Travel Insurance Policy
+                1.	The user is eligible to claim insurance only if he/she has opted for insurance coverage at the time of booking by completely paying the amount as displayed on the website.
+                2.	For any damages incurred to an Biker daddy Bikes asset (the two-wheeler), the user will be held responsible for bearing all the charges up to INR 10,000.
+                3.	For any damages incurred to an Biker daddy Bikes asset (the two-wheeler) amounting more than INR 10,000, the user is eligible to claim insurance to cover the charges that imply including the rental cost incurred during downtime period of the asset which is a time period otherwise utilized by another Biker daddy Bikes user.
+                4.	Biker daddy Bikes is at full liberty to inspect its assets before proceeding to claim insurance and its decision will be considered legitimate under all circumstances.
+                5.	For any Biker daddy Bikes user covered by travel insurance opted at the time of booking, he/she will be eligible to claim INR 2 Lakh under an unpredictable loss of life.
+                6.	The pillion rider with the Biker daddy Bikes user will be insured for INR 1 Lakh only.
+                7.	In case of a misfortunate incident involving a third party, he/she is covered under the insurance and will be eligible to claim an amount tentative to various factors such as lifestyle, tax returns, and rent etc.
+                8.	Biker daddy Bikes assets (the two-wheeler) will be insured in totality. Any deficit amount outstanding at the end of claiming insurance and damage repairs will have to be completely borne by the user.
+                </pre>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
