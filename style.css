@@ -1,0 +1,370 @@
+/*---------------------NAVBAR------------------*/
+body {
+  font-family: 'Montserrat';
+}
+.navbar-brand img {
+  max-height: 100px; /* Adjust the height as needed */
+  width: auto; /* Maintain the aspect ratio */
+}
+.nav-item{
+  font-size: larger;
+  font-weight: 600;
+  
+}
+.navbar-nav .nav-item {
+  padding-right: 12px; /* Adjust the padding as needed */
+  padding-left: 12px;  /* This ensures equal spacing on both sides */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #dc3545 !important; /* Force the color to red on hover */
+}
+.dropdown-item:hover {
+  background-color: #dc3545; /* Bootstrap 'danger' color */
+  color: white; /* Change text color to white */
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  white-space: nowrap; /* Prevents the brand text from wrapping */
+  font-size: 1.25rem; /* Adjust font size for proportion */
+  display: flex;
+  align-items: center; /* Keep image and text in same line */
+}
+
+.navbar-brand img {
+  max-height: 40px; /* Adjust image height */
+  margin-right: 10px; /* Add space between logo and text */
+}
+
+.navbar-toggler {
+  margin-left: auto;
+  padding: 8px 12px; /* Ensure button has enough padding */
+}
+
+/* Padding for links in the navbar */
+.navbar-nav .nav-link {
+  padding: 8px 12px;
+}
+
+/* For smaller screens, allow some space for the toggle button */
+@media (max-width: 576px) {
+  .navbar-brand {
+      font-size: 1rem; /* Reduce font size on small screens */
+  }
+
+  .navbar-brand img {
+      max-height: 35px; /* Reduce logo size for small screens */
+  }
+}
+
+
+
+/*------------------MID BODY----------------------------*/
+.text-highlight{
+  font-size: 60px;
+  font-weight: 400px; 
+}
+#midbody p {
+  font-size: 20px;
+  font-weight: 150px;
+}
+#midbody .btn {
+  border-radius: 16px;
+}
+
+
+
+
+
+
+
+/*-----------------ABOUT-US-------------------------------*/
+
+#about-us{
+  
+  padding-top: 100px;
+  padding-bottom: 100px;
+  
+}
+
+
+.title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title::before,
+.title::after {
+  content: '';
+  background: #33373c;
+  position: absolute;
+}
+
+.title::before {
+  height: 5px;
+  width: 300px;
+  top: 126px; /* Adjust as needed */
+}
+
+.title::after {
+  height: 10px;
+  width: 50px;
+  top: 124px; /* Adjust as needed */
+}
+
+/*------------------HAPPY CUSTOMERS------------------------*/
+.values-wrapper {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.value-item {
+  flex: 0 0 30%; /* Width of each value card */
+  scroll-snap-align: center;
+}
+
+.value-item img {
+  object-fit: cover;
+  height: 250px; /* Fixed height for the images */
+}
+
+@media (max-width: 768px) {
+  .value-item {
+      flex: 0 0 80%; /* Larger cards on mobile */
+  }
+}
+
+.values-wrapper::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for cleaner look */
+}
+
+/*------------SOCIAL -MEDIA-------------------*/
+#social-media{
+  background: #f8f9fa;
+  size: 100px;
+}
+
+#social-media p {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.social-icons img{
+  width: 90px;
+  transition: 0.5s;
+
+}
+.social-icons a:hover img{
+  transform: translateY(-10px);
+
+}
+#social-media {
+  padding-bottom: 20px; /* Adds space between the social media section and the footer */
+}
+
+#social-media .social-icons a {
+  margin: 0 10px; /* Space between social media icons */
+}
+
+#social-media p {
+  margin-bottom: 15px; /* Space between the text "FIND US ON" and the icons */
+}
+.social-icons {
+  margin-bottom: 20px; /* Adds space below the icons */
+}
+
+/* Alternatively, you can style the button directly if you prefer */
+.call-button {
+  margin-top: 20px; /* Adds space above the button */
+}
+
+/*--------------------BIKE SCROLL---------------------------*/
+#bikes-body {
+  background-image: url('bikebg.png');
+  background-size: auto 150% /* Cover full width, extend height */
+  
+   /* Adjust as needed */ 
+  
+}
+
+.bike-scroll-section {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px 0;
+  scrollbar-width: thin; /* For Firefox */
+  
+  
+}
+
+.bike-scroll-section::-webkit-scrollbar {
+  height: 8px; /* Height of the scrollbar */
+}
+
+.bike-scroll-section::-webkit-scrollbar-thumb {
+  background-color: #33373c; /* Scrollbar color */
+  border-radius: 10px;
+}
+
+.bike-card {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 250px; /* Adjust width as needed */
+  padding: 20px;
+  text-align: center;
+}
+
+.bike-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.bike-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.bike-card {
+  position: relative;
+  padding: 20px;
+  border: 1px solid #ddd;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bike-card p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.bike-card p .price,
+.bike-card p .sticker {
+  display: inline; /* Ensures elements are inline */
+}
+
+.sticker {
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-left: 8px; /* Space between the price and sticker */
+  vertical-align: middle; /* Keeps the sticker aligned with the price */
+}
+.bike-card .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white; /* Set button background to white */
+  color: #dc3545; /* Text color set to danger red */
+  border-radius: 30px; /* More rounded edges */
+  border: 2px solid #dc3545; /* Default button outline set to red */
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.bike-card .btn:hover {
+  background-color: #dc3545; /* Danger color background on hover */
+  color: white; /* Text color changes to white on hover */
+}
+
+
+/*-------------LISTING--------------------------------*/
+
+#listing .text-highlight{
+  font-size: 30px;
+  font-weight: 800;
+}
+#listing p {
+  font-size: 15px;
+  font-weight: 150px;
+}
+#listing .phone-btn:hover {
+  background-color: #b02a37; /* Darker red on hover */
+}
+
+/* Hover effect for WhatsApp button in listing section */
+#listing .whatsapp-btn:hover {
+  background-color: #25D366; /* WhatsApp green */
+  color: white; /* Change text color to white */
+  border-color: #25D366; /* Match border with the hover color */
+}
+
+/* Optional: Specific style for email button hover */
+#listing .email-btn:hover {
+  background-color: #e0e0e0; /* Light grey on hover */
+}
+
+
+/*----------------FOOTER------------------------------*/
+
+.footer {
+  background-color: #343a40; /* Dark gray background */
+  color: #ffffff; /* White text */
+  font-size: small;
+  padding: 10px 0;
+}
+
+.footer a {
+  color: #ffffff; /* White links */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: none ; /* Underline on hover */
+}
+
+.footer .badge-info {
+  background-color: #00bcd4; /* Cyan badge */
+  color: #ffffff; /* White badge text */
+  font-size: 0.8rem; /* Smaller font for the badge */
+}
+
+.footer .list-inline-item {
+  margin-right: 10px;
+}
+
+.footer .list-inline-item i {
+  font-size: 1.5rem; /* Larger icons */
+}
+.footer {
+  padding: 5px 0; /* Further reduced overall padding */
+}
+
+.footer h5 {
+  font-size: 16px; /* Smaller heading size */
+  margin-bottom: 2px; /* Even less space below headings */
+}
+
+.footer ul li a {
+  font-size: 12px; /* Smaller link font size */
+  padding: 2px 0; /* Reduce padding for links */
+}
+
+.footer p {
+  font-size: 10px; /* Smaller paragraph font size */
+  line-height: 1.2; /* Tighter line height */
+  margin: 0; /* Remove any margin */
+}
+
+/* Adjust badge size if necessary */
+.footer .badge {
+  font-size: 8px; /* Smaller badge size */
+  padding: 1px 2px; /* Compact the badge padding */
+}
+
